@@ -5,8 +5,8 @@
     --header-height: 6.25rem;
 
     /*---------------COLLORS -------------------*/
-    --main-color: #f7e6df;
-    --first-color: #75492b;
+    --main-color: #37222A;
+    --first-color: #998C9C;
     --second-color: #dfd6a7;
     --white-color: #ffffff;
     --black-color: #151515;
@@ -125,7 +125,7 @@ a{
 .btn__outline{
     width: 280px;
     background-color: transparent;
-    color: var(--first-color);
+    color: var(--white-color);
     padding: 5px 10px 5px 0;
     transition: all 400ms ease-in-out;
     position: relative;
@@ -253,7 +253,7 @@ a{
     font-size: var(--big-font-size);
     line-height: calc(var(--big-font-size) + 30px);
     letter-spacing: 0.1em;
-    color: var(--first-color);
+    color: var(--white-color);
     margin-bottom: var(--mb-1-5);
 }
 .hero__content p{
@@ -262,7 +262,7 @@ a{
     line-height: calc(var(--normal-font-size) + 10px);
     padding: 0 3rem;
     letter-spacing: 0.2em;
-    color: var(--black-color);
+    color: var(--white-color);
     margin-bottom: var(--mb-1-5);
 }
 /* ABOUT */
