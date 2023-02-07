@@ -28,7 +28,7 @@
     --font-bold: 800;
 
     /*---------------MARGINS-------------------*/
-    --mb-05: 0.5rem;
+    --mb-05: 0.3rem;
     --mb-1: 1rem;
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
@@ -449,11 +449,17 @@ a{
 }
 .gallery__img img{
     margin: var(--mb-05);
+    width: 15rem;
+    height: 18rem;
+    border-radius: 30px;
+    box-shadow: #151515;
+    box-shadow: 2px;
     background-color: rgba(255, 255, 255, 0.4);
     filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.2));
 }
 .gallery__img img:hover{
     transform: scale(1.1);
+    transition-duration: 0.5s;
 }
 .gallery__content button{
     margin: 0 auto;
