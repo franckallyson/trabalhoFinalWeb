@@ -190,12 +190,13 @@ a{
         right: 0;
         width: 0;
         height: 100vh;
-        background-color: var(--main-color);
+        background-color: var(--white-color);
         font-size: var(--h2-font-size);
         text-align: center;
         text-transform: capitalize;
         padding-top: var(--header-height);
         transition: all 400ms ease-in-out;
+        z-index: var(--Z-fixed);
     }
     .nav__item{
         padding: 15px 0;
