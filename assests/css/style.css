@@ -96,7 +96,7 @@ a{
     font-weight: var(--font-light);
     font-size: var(--h2-font-size);
     line-height: var(--h2-font-size);
-    color: var(--black-color);
+    color: var(--white-color);
 }
 /* BUTTON */
 .btn{
@@ -306,7 +306,7 @@ a{
 .about__descripion p{
     font-weight: var(--font-medium);
     line-height: calc(var(--normal-font-size) + 12px);
-    color: var(--black-color);
+    color: var(--white-color);
 }
 /* SERVICES */
 .services{
