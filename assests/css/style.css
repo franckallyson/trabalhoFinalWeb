@@ -92,11 +92,15 @@ a{
     line-height: var(--big-font-size);
     color: var(--first-color);
 }
+.brand{
+    width: 20px;
+    background-color: black;
+}
 .section__title span{
     font-weight: var(--font-light);
     font-size: var(--h2-font-size);
     line-height: var(--h2-font-size);
-    color: var(--white-color);
+    color: burlywood;
 }
 /* BUTTON */
 .btn{
@@ -159,7 +163,7 @@ a{
 /* NAV */
 .l-header{
     width: 100%;
-    height: var(--header-height);
+    /* height: var(--header-height); */
     background-color: rgba(255, 255, 255, 0.4);
     /* position: fixed; */
     /* top: 0; */
@@ -170,6 +174,9 @@ a{
 .navbar{
     justify-content: space-between;
     padding: 20px;
+}
+.navbar .brand a img {
+    width: 170px;
 }
 .nav__toggle{
     font-size: var(--h1-font-size);
@@ -283,10 +290,17 @@ a{
     border-radius: 30px;
     padding: 1rem;
 }
-.about__img img{
+.about__img {
     width: 100%;
+    background-color: #37222A;
     border-radius: 30px;
     filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.25));
+    padding: 34px;
+    display: flex;
+    justify-content: space-around;
+}
+.about__img img {
+    width: 58%;
 }
 .about__descripion{
     position: relative;
@@ -319,7 +333,7 @@ a{
 }
 .services__content__descripion{
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 0 10rem;
     text-align: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -369,7 +383,7 @@ a{
 .package{
     width: 100%;
     background-color: var(--main-color);
-    border-radius: 0 300px;
+    border-radius: 0 100px;
 }
 .package__cards{
     margin-top: var(--mb-2-5);
@@ -461,8 +475,10 @@ a{
     transform: scale(1.1);
     transition-duration: 0.5s;
 }
-.gallery__content button{
-    margin: 0 auto;
+.gallery__content {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 /* TESTIMONIALS */
 .testimonials{
@@ -563,6 +579,9 @@ a{
     line-height: calc(var(--normal-font-size) + 10px);
     text-align: center;
 }
+.footer__data h1 a img {
+    width: 85%;
+}
 .footer .copy{
     text-align: center;
     padding: 1rem 0;
@@ -597,7 +616,7 @@ a{
         grid-template-columns: repeat(4, 1fr);
     }
     .gallery::before{
-        height: 50%;
+        height: 65%;
         top: 25%;
     }
     .testimonials__card{
@@ -636,8 +655,12 @@ a{
         height: 100vh;
     }
     .hero .hero__img img{
-        max-width: 100%;
-        height: 100%;
+        max-width: 80%;
+        height: 80%;
+        margin-top: 14%;
+        border-radius: 20px;
+        box-shadow: 0em 0 2.4em beige;
+
     }
     .hero .hero__content,
     .hero .hero__content p{
