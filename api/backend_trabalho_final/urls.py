@@ -18,12 +18,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
-from api_trabalho_final.views import ImagesViewSet, ServicosViewSet, PacotesPromocionaisViewSet, ServicosPacotesPromocionaisViewSet
+from api_trabalho_final.views import ComentariosViewSet, ImagesViewSet, ServicosViewSet, PacotesPromocionaisViewSet, ServicosPacotesPromocionaisViewSet
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-
-router.register(r'images', ImagesViewSet)
+router.register(r'comentarios', ComentariosViewSet)
+router.register(r'images', ImagesViewSet, basename="Images")
 router.register(r'servicos', ServicosViewSet)
 router.register(r'pacotes', PacotesPromocionaisViewSet)
 router.register(r'servicos_pacotes', ServicosPacotesPromocionaisViewSet)
@@ -31,7 +31,7 @@ router.register(r'servicos_pacotes', ServicosPacotesPromocionaisViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+"""if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)"""

@@ -1,23 +1,28 @@
 from rest_framework import viewsets
-from api_trabalho_final.models import Images, Servicos, ServicosPacotesPromocionais, PacotesPromocionais
-from api_trabalho_final.serializer import ImagesSerializer, ServicosSerializer, ServicosPacotesPromocionaisSerializer, PacotesPromocionaisSerializer
+from api_trabalho_final.models import Comentario, Image, Servico, ServicoPacotePromocional, PacotePromocional
+from api_trabalho_final.serializer import ComentariosSerializer, ImagesSerializer, ServicosSerializer, ServicosPacotesPromocionaisSerializer, PacotesPromocionaisSerializer
+
+
+class ComentariosViewSet(viewsets.ModelViewSet):
+    queryset = Comentario.objects.all()
+    serializer_class = ComentariosSerializer
 
 
 class ImagesViewSet(viewsets.ModelViewSet):
-    queryset = Images.objects.all()
+    queryset = Image.objects.all()
     serializer_class = ImagesSerializer
 
 
 class ServicosViewSet(viewsets.ModelViewSet):
-    queryset = Servicos.objects.all()
+    queryset = Servico.objects.all()
     serializer_class = ServicosSerializer
 
 
 class ServicosPacotesPromocionaisViewSet(viewsets.ModelViewSet):
-    queryset = ServicosPacotesPromocionais.objects.all()
+    queryset = ServicoPacotePromocional.objects.all()
     serializer_class = ServicosPacotesPromocionaisSerializer
 
 
 class PacotesPromocionaisViewSet(viewsets.ModelViewSet):
-    queryset = PacotesPromocionais.objects.all()
+    queryset = PacotePromocional.objects.all()
     serializer_class = PacotesPromocionaisSerializer
