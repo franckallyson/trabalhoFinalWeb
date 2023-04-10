@@ -594,6 +594,103 @@ a{
     font-size: var(--small-font-size);
     line-height: var(--small-font-size);
 }
+.comments{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.contentBx{
+    display: flex;
+}
+.redbg {
+    background-color: #37222A;
+    padding: 1% 0px;
+    width: 60%;
+    border-radius: 45px;
+    box-shadow: 2px 11px 42px 2px #998c9c;  ;
+}
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 55px;
+    margin: 60px 0;
+}
+.form .inputBx{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.form .inputBx .labelBx{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 10px;
+}
+.form .inputBx input{
+    width: 25rem;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px ;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .form .inputBx input::placeholder{
+    color: rgba(255,255,255,0.5);
+} */
+.form .inputBx textarea{
+    width: 25rem;
+    background: transparent;
+    box-shadow: none;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    min-height: 150px;
+    border-bottom: 2px solid #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form .inputBx textarea::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+.form .inputBx input[type="submit"]{
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border: 1px solid var(--first-color);
+    border-radius: 50px;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    line-height: var(--normal-font-size);
+    padding: 10px 20px;
+    outline: none;
+}
+
+.form .inputBx input[type="submit"]:hover{
+    border: 1px solid var(--first-color);
+    transition: all 400ms ;
+    cursor: pointer;
+    background-color: #37222A;
+
+}
+
 /* MEDIA QUERY */
 @media (min-width: 660px){
     .services__content__descripion{
