@@ -23,7 +23,7 @@ from rest_framework import routers
 
 router = routers.DefaultRouter()
 
-router.register(r'images', ImagesViewSet)
+router.register(r'images', ImagesViewSet, basename="Images")
 router.register(r'servicos', ServicosViewSet)
 router.register(r'pacotes', PacotesPromocionaisViewSet)
 router.register(r'servicos_pacotes', ServicosPacotesPromocionaisViewSet)
@@ -31,7 +31,7 @@ router.register(r'servicos_pacotes', ServicosPacotesPromocionaisViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+"""if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)"""

@@ -3,10 +3,11 @@ from api_trabalho_final.models import Images, PacotesPromocionais, ServicosPacot
 
 
 class ImagesSerializer(serializers.ModelSerializer):
+    imagem = serializers.ImageField(max_length=None, use_url=True)
 
     class Meta:
         model = Images
-        fields = ('id_imagem', 'descricao', 'imagem')
+        fields = ('id', 'descricao', 'imagem')
 
 
 class PacotesPromocionaisSerializer(serializers.ModelSerializer):
@@ -25,5 +26,4 @@ class ServicosSerializer(serializers.ModelSerializer):
     class Meta:
         model = Servicos
         fields = '__all__'
-
 
