@@ -18,11 +18,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
-from api_trabalho_final.views import ImagesViewSet, ServicosViewSet, PacotesPromocionaisViewSet, ServicosPacotesPromocionaisViewSet
+from api_trabalho_final.views import ComentariosViewSet, ImagesViewSet, ServicosViewSet, PacotesPromocionaisViewSet, ServicosPacotesPromocionaisViewSet
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-
+router.register(r'comentarios', ComentariosViewSet)
 router.register(r'images', ImagesViewSet, basename="Images")
 router.register(r'servicos', ServicosViewSet)
 router.register(r'pacotes', PacotesPromocionaisViewSet)
