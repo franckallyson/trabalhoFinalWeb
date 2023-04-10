@@ -40,3 +40,18 @@ function scrollHeader(){
 
 }
 window.addEventListener('scroll', scrollHeader)
+
+
+// fetch('http://127.0.0.1:8000/images/1/')
+//     .then(response => response.json())
+//     .then(data => {
+//         // Preenche a tabela com os dados da API
+//         console.log(data)
+//         const contato = document.getElementById('contact')
+        
+//         const imagem = document.createElement('img')
+//         imagem.src = data.imagem
+//         contato.appendChild(imagem)
+//     })
+//     .catch(error => console.error(error));
+	
