@@ -74,7 +74,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'backend_trabalho_final.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5500",
+    "*",
 ]
 
 # Database
