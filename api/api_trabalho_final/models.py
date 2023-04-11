@@ -22,6 +22,7 @@ class Servico(models.Model):
     descricao = models.CharField(max_length=200)
     valor = models.FloatField()
     marcada = models.BooleanField()
+    picture = models.ImageField(upload_to='images/', null=True)
 
 
 class ServicoPacotePromocional(models.Model):

@@ -29,6 +29,8 @@ class ServicosPacotesPromocionaisSerializer(serializers.ModelSerializer):
 
 
 class ServicosSerializer(serializers.ModelSerializer):
+    picture = serializers.ImageField(max_length=None, use_url=True)
+
     class Meta:
         model = Servico
         fields = '__all__'
