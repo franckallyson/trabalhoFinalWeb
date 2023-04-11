@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-*teipvlyfox9pu%z_d6tsexd-&64asglzzr*hijhpqnj#wc4&5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['http://franckallyson.pythonanywhere.com/']
 
 
 # Application definition
@@ -75,6 +75,7 @@ WSGI_APPLICATION = 'backend_trabalho_final.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5500",
+    "http://franckallyson.pythonanywhere.com/"
 ]
 
 # Database
