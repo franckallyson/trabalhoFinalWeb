@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'italoCesarSilvaOliveira/trial',
         'USER': 'franckallyson',
-        'PASSWORD': 'v2_42shc_ruAiL4waEuXMpkSCvhA9E72',
+        'PASSWORD': 'v2_42wr8_WHgtqjbeq3wuGH8xhrx4JwG',
         'HOST': 'db.bit.io',
         'PORT': '5432'
     }
