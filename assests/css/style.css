@@ -691,6 +691,22 @@ a{
 
 }
 
+/* MEDIA QUERY COMMENTS */
+@media (max-width: 660px){
+    .form .inputBx input {
+        width: 250px;
+    }
+
+    .redbg{
+        width: 90%;
+    }
+    .form .inputBx textarea{
+        width: 250px;
+       
+    }
+}
+
+
 /* MEDIA QUERY */
 @media (min-width: 660px){
     .services__content__descripion{
