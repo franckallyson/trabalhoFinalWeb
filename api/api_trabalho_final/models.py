@@ -10,7 +10,7 @@ class Comentario(models.Model):
 
 class Image(models.Model):
     descricao = models.CharField(max_length=100)
-    imagem = models.ImageField(upload_to='images/')
+    imagem = models.ImageField()
 
 
 class PacotePromocional(models.Model):
@@ -22,7 +22,7 @@ class Servico(models.Model):
     descricao = models.CharField(max_length=200)
     valor = models.FloatField()
     marcada = models.BooleanField()
-    picture = models.ImageField(upload_to='images/', null=True)
+    picture = models.ImageField(null=True)
 
 
 class ServicoPacotePromocional(models.Model):
